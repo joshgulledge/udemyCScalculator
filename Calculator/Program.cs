@@ -6,21 +6,33 @@ namespace Calculator
     {
         static void Main(string[] args)
         {
-            string someText = "Here is some text";
-            string moreText = "Now theres more text";
-            //bool isEqual = someText.Equals(moreText, StringComparison.OrdinalIgnoreCase);
-            string addedText = someText + " " + moreText;
-            string formattedString = string.Format("{0} {1} here is even more text", someText, moreText);
+            string input = Console.ReadLine();
 
-            Console.WriteLine(addedText);
-            Console.WriteLine(formattedString);
+            if (input.Equals("Avatar"))
+            {
+                Console.WriteLine("Hello blue man");
+            }
+            else if (input.Equals("Joe"))
+            {
+                Console.WriteLine("Hello Mr. Mean");
+            }
+            else
+            {
+                Console.WriteLine("Sup Guesto");
+            }
 
-            Console.WriteLine(someText.Length);
-            Console.WriteLine(someText[6]);
-            Console.WriteLine(someText.Substring(8, 4));
-
-            string replacedText = someText.Replace("text", "string");
-            Console.WriteLine(replacedText);
+            switch (input)
+            {
+                case "Avatar":
+                    Console.WriteLine("Hello blue man");
+                    break;
+                case "Joe":
+                    Console.WriteLine("Hello Mr. Mean");
+                    break;
+                default:
+                    Console.WriteLine("Sup Guesto");
+                    break;
+            }
         }
     }
 }
