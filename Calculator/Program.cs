@@ -18,6 +18,9 @@ namespace Calculator
             Console.WriteLine(someText.Length);
             Console.WriteLine(someText[6]);
             Console.WriteLine(someText.Substring(8, 4));
+
+            string replacedText = someText.Replace("text", "string");
+            Console.WriteLine(replacedText);
         }
     }
 }
