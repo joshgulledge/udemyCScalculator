@@ -7,19 +7,17 @@ namespace Calculator
         static void Main(string[] args)
         {
             string someText = "Here is some text";
-            int number = 10;
-            double anotherNumber = 10.9;
-            bool isOrdered = true;
-            string input = Console.ReadLine();
-            var anything = 10.5;
+            string moreText = "Now theres more text";
+            //bool isEqual = someText.Equals(moreText, StringComparison.OrdinalIgnoreCase);
+            string addedText = someText + " " + moreText;
+            string formattedString = string.Format("{0} {1} here is even more text", someText, moreText);
 
-            Console.WriteLine(someText);
-            Console.WriteLine(number);
-            Console.WriteLine(anotherNumber);
-            Console.WriteLine(isOrdered);
-            Console.WriteLine(input);
-            Console.WriteLine(anything);
+            Console.WriteLine(addedText);
+            Console.WriteLine(formattedString);
 
+            Console.WriteLine(someText.Length);
+            Console.WriteLine(someText[6]);
+            Console.WriteLine(someText.Substring(8, 4));
         }
     }
 }
