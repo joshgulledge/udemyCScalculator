@@ -6,12 +6,23 @@ namespace Calculator
     {
         static void Main(string[] args)
         {
-            Person person1 = new Person();
-            Console.WriteLine(person1.getAge());
-            person1.setAge(29);
-            Console.WriteLine(person1.getAge());
+            try
+            {
+                string input = Console.ReadLine();
 
-            Person.greet();
+                int convertedNumber;
+                bool isConverted = int.TryParse(input, out convertedNumber);
+
+                if (!isConverted)
+                {
+                    throw new Exception("Conversion didn't work");
+                }
+            } catch (Exception ex)
+            {
+                Console.WriteLine("Error: {0}", ex.Message);
+            }
+            Console.WriteLine("App still running");
+
         }
     }
 }
