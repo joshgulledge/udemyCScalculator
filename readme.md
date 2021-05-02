@@ -1,1 +1,3 @@
-﻿### Here is the read me, testing if this works
+﻿### Very Basic Calculator app
+- Asks for user to manually input numbers and operations
+- Includes a Unit test file
