@@ -30,10 +30,7 @@ namespace Calculator
             {
                 // In real world we would want to log this out
                 Console.WriteLine(ex.Message);
-            } finally
-            {
-
-            }
+            } 
         }
     }
 }
